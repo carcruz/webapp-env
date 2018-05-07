@@ -1,1 +1,2 @@
-# Web App init enviroment
+# condopass-web
+Condopass Web Frontend

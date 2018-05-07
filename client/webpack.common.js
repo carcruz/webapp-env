@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 
 const config = {
-  entry: './source/index.js',
+  entry: './source/index.jsx',
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'built/static'),
@@ -17,7 +17,7 @@ const config = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2016', 'es2017', 'react'],
+          presets: ['react', 'env'],
           env: {
             production: {
               plugins: [

@@ -13,6 +13,7 @@ module.exports = merge(common, {
   devServer: {
     contentBase: path.join(__dirname, 'built'),
     compress: true,
+    historyApiFallback: true,
     port: process.env.PORT || 8080,
     proxy: {
       '/api': 'http://localhost:8000',
